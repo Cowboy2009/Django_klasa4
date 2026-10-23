@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Good doctor</h1>
+    <p>Masz {{ wizyty.count }} wizyty</p><br>
+    <h2>Lista Twoich Pacjentów</h2>
+    <ol>
+        {% for pacjent in pacjenci %}
+            <li>{{ pacjent }}</li>
+        {% endfor %}
+    </ol>
+
+</body>
+</html>
